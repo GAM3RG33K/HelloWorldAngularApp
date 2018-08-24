@@ -1,5 +1,14 @@
 <h1>{{title}}</h1>
 <br/>
-<p>
-  course works!
-</p>
+<img src="{{imageURL}}" />
+<!-- <p> -->
+  <!-- courselist iteration with for loop -->
+  <ul>
+    <li *ngFor="let course of courseList ">
+      {{course}}
+    </li>
+  </ul>
+
+  <button class="btn btn-primary">Save</button>
+
+<!-- </p> -->
