@@ -14,4 +14,5 @@ import { CourseComponent } from './course/course.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+ }
