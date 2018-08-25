@@ -1,4 +1,3 @@
-
 // tslint:disable-next-line:quotemark
 import { Component, OnInit } from "@angular/core";
 import { CourseService } from './course.service';
@@ -7,15 +6,12 @@ import { CourseService } from './course.service';
   selector: 'app-course',
   // templateUrl: './course.component.html',
   template: `
-
-    <!--<div (click)="divClick($event)">-->
-    <!-- button to click -->
-    <!-- <button class="btn btn-primary" (click)="saveButtonClick($event)" >Save</button> -->
-
     <!-- email input text -->
     <!-- <input [value] = "email" (keyup.enter)=" email = $event.target.value; onKeyUp()" /> -->
-    <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
-    <!-- </div> -->
+    <input [(ngModel)]="email" />
+
+    <!-- button to click -->
+    <button class="btn btn-primary" (click)="saveButtonClick()">Save</button>
 `,
   styleUrls: ['./course.component.css']
 })
@@ -34,12 +30,14 @@ export class CourseComponent implements OnInit {
 
   ngOnInit() {}
 
-  saveButtonClick($event) {
+  // saveButtonClick($event) {
+  saveButtonClick() {
+
     // remove below comment to apply the bubble up event
     // event of button click will also cause an event of click on wrapper div of this button
-    $event.stopPropagation();
+    // $event.stopPropagation();
 
-    console.log('Save button clicked!!', $event);
+    console.log('Email: ' + this.email);
   }
 
   divClick($event) {
@@ -47,6 +45,5 @@ export class CourseComponent implements OnInit {
   }
 
   onKeyUp() {
-    console.log('Email: ' + this.email);
   }
 }
