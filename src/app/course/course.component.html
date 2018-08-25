@@ -1,14 +1,14 @@
 <h1>{{title}}</h1>
 <br/>
-<img src="{{imageURL}}" />
+<!-- <img src="{{imageURL}}" /> -->
 <!-- <p> -->
-  <!-- courselist iteration with for loop -->
-  <ul>
-    <li *ngFor="let course of courseList ">
-      {{course}}
-    </li>
-  </ul>
-
-  <button class="btn btn-primary">Save</button>
-
+<!-- courselist iteration with for loop -->
+<ul>
+  <li *ngFor="let course of courseList ">
+    {{course}}
+  </li>
+</ul>
+<div>
+  <button class="btn btn-primary" (click)="saveButtonClick($event)">Save</button>
+</div>
 <!-- </p> -->
