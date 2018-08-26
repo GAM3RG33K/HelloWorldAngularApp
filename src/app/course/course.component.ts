@@ -8,10 +8,11 @@ import { CourseService } from './course.service';
   template: `
     <!-- email input text -->
     <!-- <input [value] = "email" (keyup.enter)=" email = $event.target.value; onKeyUp()" /> -->
-    <input [(ngModel)]="email" />
+    <!-- <input [(ngModel)]="email" /> -->
 
     <!-- button to click -->
-    <button class="btn btn-primary" (click)="saveButtonClick()">Save</button>
+    <!-- <button class="btn btn-primary" (click)="saveButtonClick()">Save</button> -->
+
 `,
   styleUrls: ['./course.component.css']
 })
