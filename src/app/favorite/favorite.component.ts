@@ -8,9 +8,11 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class FavoriteComponent implements OnInit {
   // tslint:disable-next-line:no-input-rename
   @Input('isFav')
-  isFavorite: boolean;
-  @Output()
-  change = new EventEmitter();
+  isFavorite = false;
+
+  // tslint:disable-next-line:no-output-rename
+  @Output('change')
+  clickEvent = new EventEmitter();
 
   constructor() {}
 
@@ -18,7 +20,7 @@ export class FavoriteComponent implements OnInit {
 
   onClick() {
     this.isFavorite = !this.isFavorite;
-    this.change.emit();
+    this.clickEvent.emit(this.isFavorite);
   }
 
 }
