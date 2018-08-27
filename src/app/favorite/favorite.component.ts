@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class FavoriteComponent implements OnInit {
   // tslint:disable-next-line:no-input-rename
-  @Input('isFavorite')
+  @Input('isFav')
   isFavorite: boolean;
   @Output()
   change = new EventEmitter();
