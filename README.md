@@ -13,7 +13,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
   ### Commands for Angular CLI
     Basic command : ng serve 
-  #### Note: Use this to start angular application when inside angular project directory
+          Note: Use this to start angular application only when inside angular project directory
 
     1. ng g c component-name
         creates all the components files with given name and registers it in the app.modules.ts
