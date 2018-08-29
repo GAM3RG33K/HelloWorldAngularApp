@@ -1,3 +1,6 @@
 <!-- <app-course></app-course> -->
 
-<app-favorite [isFav]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite>
+<!-- Added null check by uing safety operator "?" after the variable which can null : here it is 'post' -->
+<!-- <app-favorite [isFav]="post?.isFavorite" (change)="onFavoriteChanged($event)"></app-favorite> -->
+
+<app-text-input></app-text-input>

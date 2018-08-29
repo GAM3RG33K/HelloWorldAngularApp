@@ -5,12 +5,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { InputFormatDirective } from './input-format.directive';
+import { TextInputComponent } from './text-input/text-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    InputFormatDirective,
+    TextInputComponent
   ],
   imports: [
     BrowserModule,
