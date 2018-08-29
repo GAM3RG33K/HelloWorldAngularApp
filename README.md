@@ -7,13 +7,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Useful-commands
-  #	Install dependencies:
+  ###	Install dependencies:
 		1. npm install --save-dev @fortawesome/fontawesome-free bootstrap@4.1.3 jquery
 			installs fontawesome icons, bootstrap and jquery and adds them to packages.json
 
-  # Commands for Angular CLI
+  ### Commands for Angular CLI
     Basic command : ng serve 
-          start angular application; must be used when inside angular project directory
+          Note: Use this to start angular application when inside angular project directory
 
     1. ng g c <nameOfComponent>
         creates all the components files with given name and registers it in the app.modules.ts
