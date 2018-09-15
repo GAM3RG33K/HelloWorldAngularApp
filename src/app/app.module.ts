@@ -8,6 +8,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { InputFormatDirective } from './input-format.directive';
 import { TextInputComponent } from './text-input/text-input.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HttpDemoComponent } from './http-demo/http-demo.component';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     FavoriteComponent,
     InputFormatDirective,
     TextInputComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    HttpDemoComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [
     CourseService
