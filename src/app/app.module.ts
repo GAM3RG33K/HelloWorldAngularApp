@@ -1,3 +1,4 @@
+import { PostService } from './post.service';
 import { CourseService } from './course/course.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -10,6 +11,7 @@ import { TextInputComponent } from './text-input/text-input.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HttpDemoComponent } from './http-demo/http-demo.component';
 import { HttpModule } from '@angular/http';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { HttpModule } from '@angular/http';
     HttpModule
   ],
   providers: [
-    CourseService
+    CourseService,
+    PostService
   ],
   bootstrap: [AppComponent]
 })
